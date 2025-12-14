@@ -405,7 +405,7 @@ with st.sidebar:
     
     st.divider()
     
-    st.markdown("### ℹ️ Tentang TumbuhKini Pro")
+    st.markdown("### ℹ️ Tentang TumbuhKini")
     st.caption("""
     Aplikasi analisis keuangan UMKM berbasis AI. 
     Membantu pemilik usaha kecil memahami performa 
@@ -416,7 +416,7 @@ with st.sidebar:
 
 # --- HALAMAN UTAMA ---
 
-st.markdown("<h1>TumbuhKini Pro</h1>", unsafe_allow_html=True)
+st.markdown("<h1>TumbuhKini</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Asisten Analisis Bisnis UMKM Berbasis AI - Ubah data jadi keputusan pintar</p>", unsafe_allow_html=True)
 
 st.markdown("""
@@ -997,7 +997,7 @@ else:
     st.info("👆 **Mulai dengan mengupload file CSV data keuangan Anda di atas**")
     
     st.markdown("---")
-    st.markdown("### 🎯 Apa yang Bisa Dilakukan TumbuhKini Pro?")
+    st.markdown("### 🎯 Apa yang Bisa Dilakukan TumbuhKini?")
     
     col_feat1, col_feat2, col_feat3 = st.columns(3)
     
