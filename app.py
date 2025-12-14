@@ -18,7 +18,7 @@ if GOOGLE_API_KEY == "YOUR_GEMINI_API_KEY_HERE":
 else:
     genai.configure(api_key=GOOGLE_API_KEY)
 
-st.set_page_config(page_title="BizMind Pro: Analisa UMKM", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="TumbuhKini: Analisa UMKM", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""
 <style>
@@ -188,7 +188,7 @@ class PDF(FPDF):
     def footer(self):
         self.set_y(-15)
         self.set_font('Arial', 'I', 9)
-        self.cell(0, 10, f'BizMind Pro - Halaman {self.page_no()}', 0, 0, 'C')
+        self.cell(0, 10, f'TumbuhKini - Halaman {self.page_no()}', 0, 0, 'C')
 
 def create_pdf(business_type, ai_advice_text, summary_stats, figures):
     """Create comprehensive PDF report with better visualizations"""
@@ -397,7 +397,7 @@ with st.sidebar:
     st.download_button(
         label="📥 Download Template CSV",
         data=generate_csv_template(),
-        file_name="template_bizmind_pro.csv",
+        file_name="template_TumbuhKini_pro.csv",
         mime="text/csv",
         help="File contoh lengkap dengan 14 hari data",
         use_container_width=True
@@ -405,7 +405,7 @@ with st.sidebar:
     
     st.divider()
     
-    st.markdown("### ℹ️ Tentang BizMind Pro")
+    st.markdown("### ℹ️ Tentang TumbuhKini Pro")
     st.caption("""
     Aplikasi analisis keuangan UMKM berbasis AI. 
     Membantu pemilik usaha kecil memahami performa 
@@ -416,7 +416,7 @@ with st.sidebar:
 
 # --- HALAMAN UTAMA ---
 
-st.markdown("<h1>BizMind Pro</h1>", unsafe_allow_html=True)
+st.markdown("<h1>TumbuhKini Pro</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Asisten Analisis Bisnis UMKM Berbasis AI - Ubah data jadi keputusan pintar</p>", unsafe_allow_html=True)
 
 st.markdown("""
@@ -845,7 +845,7 @@ if uploaded_file is not None:
             st.download_button(
                 "📥 Download Data (CSV)",
                 csv_export,
-                "data_analisis_bizmind.csv",
+                "data_analisis_TumbuhKini.csv",
                 "text/csv"
             )
         
@@ -997,7 +997,7 @@ else:
     st.info("👆 **Mulai dengan mengupload file CSV data keuangan Anda di atas**")
     
     st.markdown("---")
-    st.markdown("### 🎯 Apa yang Bisa Dilakukan BizMind Pro?")
+    st.markdown("### 🎯 Apa yang Bisa Dilakukan TumbuhKini Pro?")
     
     col_feat1, col_feat2, col_feat3 = st.columns(3)
     
